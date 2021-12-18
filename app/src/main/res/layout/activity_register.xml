@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".Register"
+    tools:deviceIds="wear">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardMaxElevation="30dp"
+        app:cardElevation="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/dumbbell_login_icon"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <EditText
+                android:id="@+id/reguser"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Username"
+                android:inputType="textEmailAddress"
+                android:background="@drawable/edt_background"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:layout_marginTop="30dp"/>
+
+            <EditText
+                android:id="@+id/regpass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:background="@drawable/edt_background"
+                android:paddingLeft="15dp"
+                android:textColor="#000"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/regrepass"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/edt_background"
+                android:paddingLeft="15dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Signup"
+                    android:layout_weight="1"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/btn_background"
+                    android:textColor="#FFF"
+                    android:onClick="buttonSignup"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="424dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:paddingLeft="20dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="25dp"
+                    android:text="Already have an account?"
+                    android:textColor="#000000"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/Login_Reg"
+                    android:layout_width="376dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:text="Login"
+                    android:textColor="#FFFFFF"
+                    android:textSize="10dp"
+                    tools:ignore="TextContrastCheck" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
